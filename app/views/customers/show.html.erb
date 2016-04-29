@@ -1,0 +1,54 @@
+<div class="container-fluid">
+ 	<div class="row">
+		<div class="col-sm-4 col-md-2 sidebar white">
+			
+			<ul class="nav nav-sidebar">
+				<li class="active"><a href="/guitars">List all Guitar</a></li>
+				<li><%= link_to "Add New Guitar", new_guitar_path %></li>
+      		</ul>
+      
+			<ul class="nav nav-sidebar">
+				<li><a href="/purchase_orders">List all Purchase Order</a></li>
+				<li><%= link_to "New Purchase", new_purchase_order_path %></li>
+			</ul>
+
+			<ul class="nav nav-sidebar">
+				<li><a href="/customers">List all Customer</a></li>
+				<li><%= link_to "Add Customer", new_customer_path %></li>
+			</ul>
+
+			<ul class="nav nav-sidebar">
+				<li><a href="/dealers">List all Dealer</a></li>
+				<li><%= link_to "Add New Dealer", new_dealer_path %></li>
+ 			</ul>
+
+    	</div>
+
+    	<div class="col-md-4 main white">
+			<p id="notice"><%= notice %></p>
+
+			<p>
+			  <strong>First name:</strong>
+			  <%= @customer.first_name %>
+			</p>
+
+			<p>
+			  <strong>Last name:</strong>
+			  <%= @customer.last_name %>
+			</p>
+
+			<p>
+			  <strong>Address:</strong>
+			  <%= @customer.address %>
+			</p>
+
+			<p>
+			  <strong>Contact:</strong>
+			  <%= @customer.contact %>
+			</p>
+
+			<%= link_to 'Edit', edit_customer_path(@customer), :class => "btn btn-default" %> |
+			<%= link_to 'Back', customers_path, :class => "btn btn-default" %>
+		</div>
+	</div>
+</div>

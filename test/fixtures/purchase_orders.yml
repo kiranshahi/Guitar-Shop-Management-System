@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purchaseDate: 2016-04-28
+  delivaryDate: 2016-04-28
+  make: MyString
+  quantity: 1
+  price: 1
+
+two:
+  purchaseDate: 2016-04-28
+  delivaryDate: 2016-04-28
+  make: MyString
+  quantity: 1
+  price: 1

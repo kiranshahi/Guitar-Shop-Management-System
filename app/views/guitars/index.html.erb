@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+  <% if current_user.admin? %> 
+    <div class="col-sm-4 col-md-2 sidebar white">
+      <ul class="nav nav-sidebar">
+        <li class="active"><a href="/guitars">List all Guitar</a></li>
+        <li><%= link_to "Add New Guitar", new_guitar_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/purchase_orders">List all Purchase Order</a></li>
+        <li><%= link_to "New Purchase", new_purchase_order_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/customers">List all Customer</a></li>
+        <li><%= link_to "Add Customer", new_customer_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/dealers">List all Dealer</a></li>
+        <li><a href="#">Add New Dealer</a></li>
+      </ul>
+    </div>
+  <% end -%>
+
+  <% if !current_user.admin? %>
+      <div class="col-sm-4 col-md-2"></div>
+  <% end -%>
+
+    <div class="col-md-9 main white">
+      <p id="notice"><%= notice %></p>
+      <h1><small>Listing Guitars</small></h1>
+        <table class="table">
+          <thead>
+            <tr class="active">
+              <th>Guitar name</th>
+              <th>Quantity</th>
+              <th>Last Updated</th>
+              <th colspan="3">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @guitars.each do |guitar| %>
+              <tr>
+                <td><%= guitar.guitar_name %></td>
+                <td><%= guitar.quantity %></td>
+                <td><%= time_ago_in_words(guitar.created_at) %> Ago</td>
+                <td><%= link_to 'Show Details', guitar, :class => "btn btn-default" %></td>
+                <td><%= link_to 'Edit', edit_guitar_path(guitar), :class => "btn btn-default" %></td>
+                <% if current_user.admin? %>
+                  <td><%= link_to 'Delete', guitar, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default" %></td>
+                <% end -%>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <br />
+        <% if current_user.admin? %>
+          <%= link_to 'New Guitar', new_guitar_path %>
+          <% end -%>
+    </div>
+  </div>
+</div>

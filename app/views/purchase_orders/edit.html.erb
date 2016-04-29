@@ -1,0 +1,33 @@
+<div class="container-fluid">
+ 	<div class="row">
+		<div class="col-sm-4 col-md-2 sidebar white">
+			
+			<ul class="nav nav-sidebar">
+				<li><a href="/guitars">List all Guitar</a></li>
+				<li><%= link_to "Add New Guitar", new_guitar_path %></li>
+			</ul>
+
+      		<ul class="nav nav-sidebar">
+        		<li class="active"><a href="/purchase_orders">List all Purchase Order</a></li>
+        		<li><%= link_to "New Purchase", new_purchase_order_path %></li>
+      		</ul>
+      		
+      		<ul class="nav nav-sidebar">
+        		<li><a href="/customers">List all Customer</a></li>
+        		<li><%= link_to "Add Customer", new_customer_path %></li>
+      		</ul>
+      		
+      		<ul class="nav nav-sidebar">
+        		<li><a href="/dealers">List all Dealer</a></li>
+        		<li><a href="#">Add New Dealer</a></li>
+      		</ul>
+    	
+    	</div>
+
+    	<div class="col-md-8 main white">
+
+			<%= render 'form' %>
+
+		</div>
+	</div>
+</div>

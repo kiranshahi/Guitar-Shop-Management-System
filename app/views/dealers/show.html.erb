@@ -1,0 +1,55 @@
+<div class="container-fluid">
+ 	<div class="row">
+		<div class="col-sm-4 col-md-2 sidebar white">
+			
+			<ul class="nav nav-sidebar">
+				<li class="active"><a href="/guitars">List all Guitar</a></li>
+				<li><%= link_to "Add New Guitar", new_guitar_path %></li>
+      		</ul>
+      
+			<ul class="nav nav-sidebar">
+				<li><a href="/purchase_orders">List all Purchase Order</a></li>
+				<li><%= link_to "New Purchase", new_purchase_order_path %></li>
+			</ul>
+
+			<ul class="nav nav-sidebar">
+				<li><a href="/customers">List all Customer</a></li>
+				<li><%= link_to "Add Customer", new_customer_path %></li>
+			</ul>
+
+			<ul class="nav nav-sidebar">
+				<li><a href="/dealers">List all Dealer</a></li>
+				<li><%= link_to "Add New Dealer", new_dealer_path %></li>
+ 			</ul>
+
+    	</div>
+
+    	<div class="col-md-4 main white">
+
+			<p id="notice"><%= notice %></p>
+
+			<p>
+			  <strong>Dealer name:</strong>
+			  <%= @dealer.dealer_name %>
+			</p>
+
+			<p>
+			  <strong>Address:</strong>
+			  <%= @dealer.address %>
+			</p>
+
+			<p>
+			  <strong>Email:</strong>
+			  <%= @dealer.email %>
+			</p>
+
+			<p>
+			  <strong>Contact:</strong>
+			  <%= @dealer.contact %>
+			</p>
+
+			<%= link_to 'Edit', edit_dealer_path(@dealer) %> |
+			<%= link_to 'Back', dealers_path %>
+		</div>
+	</div>
+</div>

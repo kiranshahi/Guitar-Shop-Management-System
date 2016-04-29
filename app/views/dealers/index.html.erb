@@ -1,0 +1,59 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 col-md-2 sidebar white">
+      <ul class="nav nav-sidebar">
+        <li class="active"><a href="/guitars">List all Guitar</a></li>
+        <li><%= link_to "Add New Guitar", new_guitar_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/purchase_orders">List all Purchase Order</a></li>
+        <li><%= link_to "New Purchase", new_purchase_order_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/customers">List all Customer</a></li>
+        <li><%= link_to "Add Customer", new_customer_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/dealers">List all Dealer</a></li>
+        <li><a href="#">Add New Dealer</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-9 main white">
+
+      <p id="notice"><%= notice %></p>
+
+      <h1><small>Listing Dealers</small></h1>
+
+      <table class="table">
+        <thead>
+          <tr class="active">
+            <th>Dealer name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @dealers.each do |dealer| %>
+            <tr>
+              <td><%= dealer.dealer_name %></td>
+              <td><%= dealer.address %></td>
+              <td><%= dealer.email %></td>
+              <td><%= dealer.contact %></td>
+              <td><%= link_to 'Show', dealer %></td>
+              <td><%= link_to 'Edit', edit_dealer_path(dealer) %></td>
+              <td><%= link_to 'Destroy', dealer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <br>
+
+      <%= link_to 'New Dealer', new_dealer_path %>
+    </div>
+  </div>
+</div>

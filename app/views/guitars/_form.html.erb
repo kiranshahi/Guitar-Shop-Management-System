@@ -1,0 +1,127 @@
+<%= form_for @guitar, html: { multipart: true } do |f| %>
+  <% if @guitar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@guitar.errors.count, "error") %> prohibited this guitar from being saved:</h2>
+
+      <ul>
+      <% @guitar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <% if current_user.admin? %> 
+    <div class="field">
+      <%= f.label :guitar_name %><br>
+      <%= f.text_field :guitar_name, {required: true} %>
+    </div>
+
+    <div class="field">
+      <%= f.label :guitar_make %><br>
+      <%= f.text_field :guitar_make, {required: true} %>
+    </div>
+
+    <div class="field">
+      <%= f.label :guitar_model %><br>
+      <%= f.text_field :guitar_model, {required: true} %>
+    </div>
+
+    <div class="field">
+      <%= f.label :guitar_color %><br>
+      <%= f.text_field :guitar_color, {required: true} %>
+    </div>
+
+    <div class="field">
+      <%= f.label :purposed_selling_price %><br>
+      <%= f.number_field :purposed_selling_price, {required: true} %>
+    </div>
+
+    <div class="field">
+      <%= f.label :rack_no %><br>
+      <%= f.number_field :rack_no, {required: true} %>
+    </div>
+
+     <div class="field">
+      <%= f.label :quantity %><br>
+      <%= f.number_field :quantity, {required: true} %>
+    </div>
+
+    <div class="field">
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
+    </div>
+    
+    <div class="field">
+
+     <%= f.label :damaged_status %>
+      <br>
+      <%= f.select(:damaged_status) do %>
+          <% [['Ok', 'Ok'], ['Damaged', 'Damaged']].each do |c| -%>
+            <%= content_tag(:option, c.first, value: c.last) %>
+          <% end %>
+      <% end %>
+    </div>
+    <br />
+    <div class="action">
+      <%= f.submit "Save Guitar Details", :class => 'btn btn-primary active' %>
+    </div>
+  <% end -%>
+  <% if !current_user.admin? %>
+    <div class="field">
+      <%= f.label :guitar_name %><br>
+      <%= f.text_field :guitar_name, :disabled => true  %>
+    </div>
+
+    <div class="field">
+      <%= f.label :guitar_make %><br>
+      <%= f.text_field :guitar_make, :disabled => true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :guitar_model %><br>
+      <%= f.text_field :guitar_model, :disabled => true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :guitar_color %><br>
+      <%= f.text_field :guitar_color, :disabled => true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :purposed_selling_price %><br>
+      <%= f.number_field :purposed_selling_price, :disabled => true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :rack_no %><br>
+      <%= f.number_field :rack_no, {required: true} %>
+    </div>
+
+     <div class="field">
+      <%= f.label :quantity %><br>
+      <%= f.number_field :quantity, :disabled => true %>
+    </div>
+
+    <div class="field">
+      <%= f.label :image %><br>
+      <%= f.file_field :image, :disabled => true %>
+    </div>
+    
+    <div class="field">
+
+     <%= f.label :damaged_status %>
+      <br>
+      <%= f.select(:damaged_status) do %>
+          <% [['Ok', 'Ok'], ['Damaged', 'Damaged']].each do |c| -%>
+            <%= content_tag(:option, c.first, value: c.last) %>
+          <% end %>
+      <% end %>
+    </div>
+    <br />
+    <div class="action">
+      <%= f.submit "Save Guitar Details", :class => 'btn btn-primary active' %>
+    </div>
+
+  <% end -%>
+
+<% end %>

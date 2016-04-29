@@ -1,0 +1,108 @@
+<div class="container-fluid">
+  <div class="row">
+    <% if current_user.admin? %>
+      <div class="col-sm-4 col-md-2 sidebar white">
+        <ul class="nav nav-sidebar">
+          <li class="active"><a href="/guitars">List all Guitar</a></li>
+          <li><%= link_to "Add New Guitar", new_guitar_path %></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="/purchase_orders">List all Purchase Order</a></li>
+          <li><%= link_to "New Purchase", new_purchase_order_path %></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="/customers">List all Customer</a></li>
+          <li><%= link_to "Add Customer", new_customer_path %></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+          <li><a href="/dealers">List all Dealer</a></li>
+          <li><a href="#">Add New Dealer</a></li>
+        </ul>
+      </div>
+    <% end -%>
+    <% if !current_user.admin? %>
+      <div class="col-sm-4 col-md-2"></div>
+    <% end -%>
+
+
+    
+    <div class="col-md-4 main white">
+      <p id="notice"><%= notice %></p>
+      <div class="thumbnail">
+        <%= image_tag @guitar.image.url(:medium) %>
+      </div>
+    </div>
+    <div class="col-md-4 main white">
+      <table class="table">
+        <tbody>
+      
+          <tr>
+            <td>
+              <strong>Guitar name:</strong>
+            </td>
+            <td>
+              <%= @guitar.guitar_name %>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>Guitar make:</strong>
+            </td>
+            <td>
+             <%= @guitar.guitar_make %>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>Guitar model:</strong>
+            </td>
+            <td>
+              <%= @guitar.guitar_model %>
+           </td>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>Guitar color:</strong>
+            </td>
+            <td>
+             <%= @guitar.guitar_color %>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>Purposed selling price:</strong>
+            </td>
+            <td>
+              <%= @guitar.purposed_selling_price %>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>Damaged status:</strong>
+            </td>
+            <td>
+              <%= @guitar.damaged_status %>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <strong>Rack no:</strong>
+            </td>
+            <td >
+              <%= @guitar.rack_no %>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <%= link_to 'Edit', edit_guitar_path(@guitar), :class => "btn btn-default" %> |
+      <%= link_to 'Back', guitars_path, :class => "btn btn-default" %>
+    </div>
+    </div>
+
+  </div>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guitar_name: MyString
+  guitar_make: MyString
+  guitar_model: MyString
+  guitar_color: MyString
+  purposed_selling_price: 1
+  damaged_status: MyString
+  rack_no: 1
+
+two:
+  guitar_name: MyString
+  guitar_make: MyString
+  guitar_model: MyString
+  guitar_color: MyString
+  purposed_selling_price: 1
+  damaged_status: MyString
+  rack_no: 1

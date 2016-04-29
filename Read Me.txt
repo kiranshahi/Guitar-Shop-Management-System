@@ -1,0 +1,10 @@
+Tools used for development and required to run the application:
+
+1. ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux]
+2. Rails 4.2.6
+3. SQLite 
+
+path for database SQL: sandesh/db/development.sqlite3
+
+Name: Kiran Shahi
+Group L2C4

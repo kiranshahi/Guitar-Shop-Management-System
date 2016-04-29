@@ -1,0 +1,63 @@
+<%= form_for(@purchase_order) do |f| %>
+  
+  <% if @purchase_order.errors.any? %>
+    
+    <div id="error_explanation">
+      <h2><%= pluralize(@purchase_order.errors.count, "error") %> prohibited this purchase_order from being saved:</h2>
+
+      <ul>
+      <% @purchase_order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+
+  <% end %>
+
+  <div class="field">
+    <%= f.label :guitar_name %><br>
+    <%= f.text_field :GuitarName,  {required: true} %>
+  </div>
+
+  <div class="field">
+
+   <%= f.label :supplier_name %>
+    <br>
+    <%= f.select(:SupplierName) do %>
+        <% [['Sona Music Palace', 'Sona Music Palace'], ['Trideb International Guitar', 'Trideb International Guitar'],['Sundram Music House','Sundram Music House']].each do |c| -%>
+          <%= content_tag(:option, c.first, value: c.second, value: c.last) %>
+        <% end %>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :purchase_date %><br>
+    <%= f.date_select :purchaseDate %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :delivary_date %><br>
+    <%= f.date_select :delivaryDate %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :make %><br>
+    <%= f.text_field :make, {required: true} %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :quantity %><br>
+    <%= f.number_field :quantity, {required: true} %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price, {required: true} %>
+  </div>
+
+  <br />
+
+  <div class="action">
+    <%= f.submit "Save Purchase Order Details", :class => 'btn btn-primary active' %>
+  </div>
+<% end %>

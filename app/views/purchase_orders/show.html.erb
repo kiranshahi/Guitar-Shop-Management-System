@@ -1,0 +1,68 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 col-md-2 sidebar white">
+      <ul class="nav nav-sidebar">
+        <li><a href="/guitars">List all Guitar</a></li>
+        <li><%= link_to "Add New Guitar", new_guitar_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li class="active"><a href="/purchase_orders">List all Purchase Order</a></li>
+        <li><%= link_to "New Purchase", new_purchase_order_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/customers">List all Customer</a></li>
+        <li><%= link_to "Add Customer", new_customer_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="/dealers">List all Dealer</a></li>
+        <li><a href="#">Add New Dealer</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 main white">
+      <p id="notice"><%= notice %></p>
+      <table class="table">
+        <tbody>
+          <tr>
+            <td><strong>Guitar Name</strong></td>
+            <td><%= @purchase_order.GuitarName %></td>
+          </tr>
+
+          <tr>
+            <td><strong>Supplier Name</strong></td>
+            <td><%= @purchase_order.SupplierName %></td>
+          </tr>
+
+          <tr>
+            <td><strong>Purchasedate:</strong></td>
+            <td><%= @purchase_order.purchaseDate %></td>
+          </tr>
+
+          <tr>
+            <td><strong>Delivarydate:</strong></td>
+            <td><%= @purchase_order.delivaryDate %></td>
+          </tr>
+
+          <tr>
+            <td><strong>Make:</strong></td>
+            <td><%= @purchase_order.make %></td>
+          </tr>
+
+          <tr>
+            <td><strong>Quantity:</strong></td>
+            <td><%= @purchase_order.quantity %></td>
+          </tr>
+
+          <tr>
+            <td><strong>Price:</strong></td>
+            <td><%= @purchase_order.price %></td>
+          </tr> 
+
+        </tbody>
+      </table>
+
+      <%= link_to 'Edit', edit_purchase_order_path(@purchase_order), :class => "btn btn-default" %> |
+      <%= link_to 'Back', purchase_orders_path, :class => "btn btn-default" %>
+    </div>
+  </div>
+</div>
