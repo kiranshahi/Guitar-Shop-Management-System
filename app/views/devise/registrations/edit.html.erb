@@ -1,5 +1,6 @@
 <div class="container-fluid">
   <div class="row">
+  <% if current_user.admin? %>
   <div class="col-sm-4 col-md-2 sidebar white">
       <ul class="nav nav-sidebar">
         <li><%= link_to "List all Guitar", guitars_path %></li>
@@ -17,9 +18,14 @@
         <li><%= link_to "List all Dealer", dealers_path %></li>
         <li><%= link_to "Add New Dealer", new_dealer_path %></li>
       </ul>
-    </div>
+  </div>
+  <% end -%>
 
-<div class="col-md-9 main white">
+  <% if !current_user.admin? %>
+      <div class="col-sm-4 col-md-2"></div>
+  <% end -%>
+
+  <div class="col-md-9 main white">
     <h2><small>Edit <%= resource_name.to_s.humanize %></small></h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -61,6 +67,6 @@
     <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, :class => 'btn btn-primary active', method: :delete %></p>
 
     <%= link_to "Back", :back %>
-</div>
-</div>
+    </div>
+  </div>
 </div>
