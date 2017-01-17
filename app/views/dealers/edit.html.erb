@@ -5,22 +5,22 @@
 		<div class="col-sm-4 col-md-2 sidebar white">
 	     
 			<ul class="nav nav-sidebar">
-				<li class="active"><a href="/guitars">List all Guitar</a></li>
+				<li><%= link_to "List all Guitar", guitars_path %></li>
 				<li><%= link_to "Add New Guitar", new_guitar_path %></li>
 			</ul>
 
 			<ul class="nav nav-sidebar">
-				<li><a href="/purchase_orders">List all Purchase Order</a></li>
+				<li><%= link_to "List all Purchase Order",purchase_orders_path %></li>
 				<li><%= link_to "New Purchase", new_purchase_order_path %></li>
 			</ul>
       	
 	    	<ul class="nav nav-sidebar">
-		        <li><a href="/customers">List all Customer</a></li>
+		        <li><%= link_to "List all Customer", customers_path%></li>
 		        <li><%= link_to "Add Customer", new_customer_path %></li>
 	      	</ul>
 
 	      <ul class="nav nav-sidebar">
-	        <li><a href="/dealers">List all Dealer</a></li>
+	        <li class="active"><%= link_to "List all Dealer", dealers_path %></li>
 	        <li><%= link_to "Add New Dealer", new_dealer_path %></li>
 	      </ul>
     	
