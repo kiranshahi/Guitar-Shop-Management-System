@@ -1,0 +1,190 @@
+
+---
+customers:
+  columns:
+  - id
+  - first_name
+  - last_name
+  - address
+  - contact
+  - created_at
+  - updated_at
+  records: 
+  - - 2
+    - Kiran
+    - Kiran
+    - Pokhara
+    - 984032
+    - '2016-04-29 04:38:17.028959'
+    - '2016-04-29 04:43:59.342387'
+
+---
+guitars:
+  columns:
+  - id
+  - guitar_name
+  - guitar_make
+  - guitar_model
+  - guitar_color
+  - purposed_selling_price
+  - damaged_status
+  - rack_no
+  - created_at
+  - updated_at
+  - quantity
+  - user_id
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  records: 
+  - - 4
+    - fdasdfa
+    - fdsafasf
+    - fasdfasf
+    - fsdfasfsa
+    - 1233
+    - Ok
+    - 23412
+    - '2016-04-28 06:42:46.065080'
+    - '2016-04-29 06:00:13.671746'
+    - 23412
+    - 
+    - loginbg.jpg
+    - image/jpeg
+    - 62912
+    - '2016-04-29 06:00:13.585489'
+  - - 7
+    - dsfsagsd
+    - gdsagas
+    - gdsag
+    - dsagas
+    - 2135
+    - Ok
+    - 52315
+    - '2016-04-28 12:13:54.534198'
+    - '2016-04-29 05:59:54.393410'
+    - 235125
+    - 
+    - loginbg.jpg
+    - image/jpeg
+    - 62912
+    - '2016-04-29 05:59:54.305442'
+  - - 8
+    - '32512352'
+    - '23531252'
+    - '52351235'
+    - '23512352'
+    - 51235123
+    - Ok
+    - 51235123
+    - '2016-04-28 12:14:12.676067'
+    - '2016-04-29 06:00:35.684184'
+    - 325125
+    - 
+    - loginbg.jpg
+    - image/jpeg
+    - 62912
+    - '2016-04-29 06:00:35.584601'
+  - - 9
+    - ds
+    - fdsfds
+    - fsdfads
+    - fsdfsda
+    - 14123
+    - Ok
+    - 14231
+    - '2016-04-29 05:59:22.920404'
+    - '2016-04-29 05:59:22.920404'
+    - 423423
+    - 1
+    - loginbg.jpg
+    - image/jpeg
+    - 62912
+    - '2016-04-29 05:59:22.638731'
+
+---
+purchase_orders:
+  columns:
+  - id
+  - purchaseDate
+  - delivaryDate
+  - make
+  - quantity
+  - price
+  - created_at
+  - updated_at
+  - SupplierName
+  - GuitarName
+  records: 
+  - - 4
+    - '2016-04-29'
+    - '2016-05-29'
+    - Aluminium
+    - 12
+    - 50000
+    - '2016-04-29 07:34:39.831530'
+    - '2016-04-29 07:34:39.831530'
+    - Trideb International Guitar
+    - Kiran's Guitar
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  - admin
+  records: 
+  - - 1
+    - kiran.admin@admin.com
+    - "$2a$10$Xe2X61qjerf26PX0l49p7uwtNWKT9TIltiuw5YuJ3SUwEoc0lse26"
+    - 
+    - 
+    - 
+    - 43
+    - '2017-01-17 14:32:07.228916'
+    - '2017-01-17 14:04:55.237664'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2016-04-28 15:20:53.378060'
+    - '2017-01-17 14:32:07.229978'
+    - true
+  - - 2
+    - madan@admin.com
+    - "$2a$10$kQnhTqcacdEiSkeTiLH1lePW6N.GcyFoJvuMzIFvyjnR6t7O9MEcW"
+    - 
+    - 
+    - 
+    - 8
+    - '2016-04-29 06:30:20.047067'
+    - '2016-04-29 06:27:42.413419'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2016-04-28 15:52:29.360955'
+    - '2016-04-29 06:30:20.048060'
+    - false
+  - - 3
+    - kiran@admin.com
+    - "$2a$10$mipQF2V1PFadWJ1W2io/KOrd3vpSPWpz6KlkuEU4NZdSpv2gQNSt2"
+    - 
+    - 
+    - 
+    - 9
+    - '2016-04-29 12:36:32.108914'
+    - '2016-04-29 12:30:21.114596'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2016-04-29 06:31:39.661110'
+    - '2016-04-29 12:36:32.109791'
+    - false

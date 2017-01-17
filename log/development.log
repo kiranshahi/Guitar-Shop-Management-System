@@ -25097,3 +25097,168 @@ Completed 200 OK in 137ms (Views: 126.3ms | ActiveRecord: 1.0ms)
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '4kiran.admin@admin.com' LIMIT 1[0m
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36m (289.3ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (311.2ms)[0m  CREATE TABLE `dealers` (`id` int(11) auto_increment PRIMARY KEY, `dealer_name` varchar(255), `address` varchar(255), `email` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (299.2ms)[0m  [1mCREATE TABLE `guitars` (`id` int(11) auto_increment PRIMARY KEY, `guitar_name` varchar(255), `guitar_make` varchar(255), `guitar_model` varchar(255), `guitar_color` varchar(255), `purposed_selling_price` int(11), `damaged_status` varchar(255), `rack_no` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `quantity` int(11), `user_id` int(11), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int(11), `image_updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (344.2ms)[0m  CREATE TABLE `purchase_orders` (`id` int(11) auto_increment PRIMARY KEY, `purchaseDate` date, `delivaryDate` date, `make` varchar(255), `quantity` int(11), `price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `SupplierName` varchar(255), `GuitarName` varchar(255)) ENGINE=InnoDB
+  [1m[36m (307.3ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (271.8ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (255.6ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (284.3ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (512.8ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (3.6ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (50.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160429021503')[0m
+  [1m[35m (55.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160428151215')
+  [1m[36m (44.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428174352')[0m
+  [1m[35m (55.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427182559')
+  [1m[36m (55.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428181657')[0m
+  [1m[35m (55.8ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427182843')
+  [1m[36m (44.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160427183151')[0m
+  [1m[35m (44.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427183437')
+  [1m[36m (44.4ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428034529')[0m
+  [1m[35m (44.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160428160346')
+  [1m[36m (318.7ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (321.0ms)[0m  CREATE TABLE `dealers` (`id` int(11) auto_increment PRIMARY KEY, `dealer_name` varchar(255), `address` varchar(255), `email` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (332.4ms)[0m  [1mCREATE TABLE `guitars` (`id` int(11) auto_increment PRIMARY KEY, `guitar_name` varchar(255), `guitar_make` varchar(255), `guitar_model` varchar(255), `guitar_color` varchar(255), `purposed_selling_price` int(11), `damaged_status` varchar(255), `rack_no` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `quantity` int(11), `user_id` int(11), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int(11), `image_updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (388.3ms)[0m  CREATE TABLE `purchase_orders` (`id` int(11) auto_increment PRIMARY KEY, `purchaseDate` date, `delivaryDate` date, `make` varchar(255), `quantity` int(11), `price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `SupplierName` varchar(255), `GuitarName` varchar(255)) ENGINE=InnoDB
+  [1m[36m (287.4ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (255.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (254.5ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (299.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (533.9ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (54.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160429021503')[0m
+  [1m[35m (44.5ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160428151215')
+  [1m[36m (44.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428174352')[0m
+  [1m[35m (55.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427182559')
+  [1m[36m (55.5ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428181657')[0m
+  [1m[35m (55.6ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427182843')
+  [1m[36m (55.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160427183151')[0m
+  [1m[35m (55.1ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427183437')
+  [1m[36m (55.2ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428034529')[0m
+  [1m[35m (54.9ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160428160346')
+  [1m[36m (303.3ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (333.7ms)[0m  CREATE TABLE `dealers` (`id` int(11) auto_increment PRIMARY KEY, `dealer_name` varchar(255), `address` varchar(255), `email` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (298.7ms)[0m  [1mCREATE TABLE `guitars` (`id` int(11) auto_increment PRIMARY KEY, `guitar_name` varchar(255), `guitar_make` varchar(255), `guitar_model` varchar(255), `guitar_color` varchar(255), `purposed_selling_price` int(11), `damaged_status` varchar(255), `rack_no` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `quantity` int(11), `user_id` int(11), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int(11), `image_updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (432.1ms)[0m  CREATE TABLE `purchase_orders` (`id` int(11) auto_increment PRIMARY KEY, `purchaseDate` date, `delivaryDate` date, `make` varchar(255), `quantity` int(11), `price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `SupplierName` varchar(255), `GuitarName` varchar(255)) ENGINE=InnoDB
+  [1m[36m (378.2ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (265.3ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (278.9ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (308.7ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36m (544.9ms)[0m  [1mCREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) [0m
+  [1m[35m (1.3ms)[0m  SELECT version FROM `schema_migrations`
+  [1m[36m (42.9ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160429021503')[0m
+  [1m[35m (44.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160428151215')
+  [1m[36m (44.7ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428174352')[0m
+  [1m[35m (44.3ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427182559')
+  [1m[36m (44.6ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428181657')[0m
+  [1m[35m (44.2ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427182843')
+  [1m[36m (44.3ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160427183151')[0m
+  [1m[35m (44.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160427183437')
+  [1m[36m (44.1ms)[0m  [1mINSERT INTO `schema_migrations` (version) VALUES ('20160428034529')[0m
+  [1m[35m (44.4ms)[0m  INSERT INTO `schema_migrations` (version) VALUES ('20160428160346')
+  [1m[36m (205.8ms)[0m  [1mDROP TABLE `customers` CASCADE[0m
+  [1m[35m (270.3ms)[0m  CREATE TABLE `customers` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (176.4ms)[0m  [1mDROP TABLE `dealers` CASCADE[0m
+  [1m[35m (279.8ms)[0m  CREATE TABLE `dealers` (`id` int(11) auto_increment PRIMARY KEY, `dealer_name` varchar(255), `address` varchar(255), `email` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (175.8ms)[0m  [1mDROP TABLE `guitars` CASCADE[0m
+  [1m[35m (302.1ms)[0m  CREATE TABLE `guitars` (`id` int(11) auto_increment PRIMARY KEY, `guitar_name` varchar(255), `guitar_make` varchar(255), `guitar_model` varchar(255), `guitar_color` varchar(255), `purposed_selling_price` int(11), `damaged_status` varchar(255), `rack_no` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `quantity` int(11), `user_id` int(11), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int(11), `image_updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (187.0ms)[0m  [1mDROP TABLE `purchase_orders` CASCADE[0m
+  [1m[35m (313.0ms)[0m  CREATE TABLE `purchase_orders` (`id` int(11) auto_increment PRIMARY KEY, `purchaseDate` date, `delivaryDate` date, `make` varchar(255), `quantity` int(11), `price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `SupplierName` varchar(255), `GuitarName` varchar(255)) ENGINE=InnoDB
+  [1m[36m (220.1ms)[0m  [1mDROP TABLE `users` CASCADE[0m
+  [1m[35m (303.0ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1)) ENGINE=InnoDB
+  [1m[36m (265.2ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (265.3ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (0.6ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[36m (188.2ms)[0m  [1mDROP TABLE `customers` CASCADE[0m
+  [1m[35m (303.6ms)[0m  CREATE TABLE `customers` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (176.6ms)[0m  [1mDROP TABLE `dealers` CASCADE[0m
+  [1m[35m (313.1ms)[0m  CREATE TABLE `dealers` (`id` int(11) auto_increment PRIMARY KEY, `dealer_name` varchar(255), `address` varchar(255), `email` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (187.4ms)[0m  [1mDROP TABLE `guitars` CASCADE[0m
+  [1m[35m (334.8ms)[0m  CREATE TABLE `guitars` (`id` int(11) auto_increment PRIMARY KEY, `guitar_name` varchar(255), `guitar_make` varchar(255), `guitar_model` varchar(255), `guitar_color` varchar(255), `purposed_selling_price` int(11), `damaged_status` varchar(255), `rack_no` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `quantity` int(11), `user_id` int(11), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int(11), `image_updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (220.5ms)[0m  [1mDROP TABLE `purchase_orders` CASCADE[0m
+  [1m[35m (279.2ms)[0m  CREATE TABLE `purchase_orders` (`id` int(11) auto_increment PRIMARY KEY, `purchaseDate` date, `delivaryDate` date, `make` varchar(255), `quantity` int(11), `price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `SupplierName` varchar(255), `GuitarName` varchar(255)) ENGINE=InnoDB
+  [1m[36m (178.3ms)[0m  [1mDROP TABLE `users` CASCADE[0m
+  [1m[35m (300.3ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1)) ENGINE=InnoDB
+  [1m[36m (264.0ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (266.3ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) 
+  [1m[36m (3.6ms)[0m  [1mSELECT version FROM `schema_migrations`[0m
+  [1m[35m (207.0ms)[0m  DROP TABLE `customers` CASCADE
+  [1m[36m (290.9ms)[0m  [1mCREATE TABLE `customers` (`id` int(11) auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `address` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (176.5ms)[0m  DROP TABLE `dealers` CASCADE
+  [1m[36m (270.2ms)[0m  [1mCREATE TABLE `dealers` (`id` int(11) auto_increment PRIMARY KEY, `dealer_name` varchar(255), `address` varchar(255), `email` varchar(255), `contact` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (176.8ms)[0m  DROP TABLE `guitars` CASCADE
+  [1m[36m (278.8ms)[0m  [1mCREATE TABLE `guitars` (`id` int(11) auto_increment PRIMARY KEY, `guitar_name` varchar(255), `guitar_make` varchar(255), `guitar_model` varchar(255), `guitar_color` varchar(255), `purposed_selling_price` int(11), `damaged_status` varchar(255), `rack_no` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `quantity` int(11), `user_id` int(11), `image_file_name` varchar(255), `image_content_type` varchar(255), `image_file_size` int(11), `image_updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (187.6ms)[0m  DROP TABLE `purchase_orders` CASCADE
+  [1m[36m (312.9ms)[0m  [1mCREATE TABLE `purchase_orders` (`id` int(11) auto_increment PRIMARY KEY, `purchaseDate` date, `delivaryDate` date, `make` varchar(255), `quantity` int(11), `price` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `SupplierName` varchar(255), `GuitarName` varchar(255)) ENGINE=InnoDB[0m
+  [1m[35m (176.6ms)[0m  DROP TABLE `users` CASCADE
+  [1m[36m (345.2ms)[0m  [1mCREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `admin` tinyint(1)) ENGINE=InnoDB[0m
+  [1m[35m (255.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36m (255.2ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.8ms)[0m  SELECT version FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 20:52:23 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by GuitarsController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ?  ORDER BY `users`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mGuitar Load (0.7ms)[0m  [1mSELECT `guitars`.* FROM `guitars`[0m
+  Rendered guitars/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 327ms (Views: 268.3ms | ActiveRecord: 4.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-01-17 20:52:27 +0545
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"62u0KBNO01kUraUoobKjKO1Tu3dJKlsuJFbHZDNk2xMjtJy8ot4+N1YLBrWps2zlh/P4AHkP5O/urbxaeNj31A=="}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ?  ORDER BY `users`.`id` ASC LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 20:52:27 +0545
+Processing by GuitarsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-01-17 20:52:27 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:52:29 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rNNnnuCXApyJ9Q/tLMCtOSV1wWutovrAp1/V9e2NHHteR57uebLM9MyARHT1c/myM3QAkVkHAMDNsHs7ZxmJHA==", "user"=>{"email"=>"kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = ?  ORDER BY `users`.`id` ASC LIMIT 1[0m  [["email", "kiran.admin@admin.com"]]
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (75.1ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = ?, `current_sign_in_at` = ?, `sign_in_count` = ?, `updated_at` = ? WHERE `users`.`id` = ?[0m  [["last_sign_in_at", "2017-01-17 14:32:07"], ["current_sign_in_at", "2017-01-17 15:07:29"], ["sign_in_count", 44], ["updated_at", "2017-01-17 15:07:29"], ["id", 1]]
+  [1m[35m (121.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 310ms (ActiveRecord: 197.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 20:52:29 +0545
+Processing by GuitarsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ?  ORDER BY `users`.`id` ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGuitar Load (0.6ms)[0m  SELECT `guitars`.* FROM `guitars`
+  Rendered guitars/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 87ms (Views: 82.7ms | ActiveRecord: 1.6ms)
