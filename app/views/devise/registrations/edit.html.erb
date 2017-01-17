@@ -1,4 +1,25 @@
-<div class="col-md-12 white">
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-4 col-md-2 sidebar white">
+      <ul class="nav nav-sidebar">
+        <li><%= link_to "List all Guitar", guitars_path %></li>
+        <li><%= link_to "Add New Guitar", new_guitar_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><%= link_to "List all Purchase Order", purchase_orders_path %></li>
+        <li><%= link_to "New Purchase", new_purchase_order_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><%= link_to "List all Customer", customers_path %></li>
+        <li><%= link_to "Add Customer", new_customer_path %></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><%= link_to "List all Dealer", dealers_path %></li>
+        <li><%= link_to "Add New Dealer", new_dealer_path %></li>
+      </ul>
+    </div>
+
+<div class="col-md-9 main white">
     <h2><small>Edit <%= resource_name.to_s.humanize %></small></h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -40,4 +61,6 @@
     <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, :class => 'btn btn-primary active', method: :delete %></p>
 
     <%= link_to "Back", :back %>
+</div>
+</div>
 </div>
