@@ -22,10 +22,6 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    
-                    <form class="navbar-form navbar-right">
-                        <input type="text" class="form-control" placeholder="Search...">
-                    </form>
                 
                     <ul class="nav navbar-nav navbar-right">
                             
@@ -36,9 +32,10 @@
                                 <li><%= link_to "Add Customer", new_customer_path %></li>
                                 <li><%= link_to "Add Dealer", new_dealer_path %></li>
                                 <li><%= link_to "Add User", new_user_path %></li>
+                                <li><%= link_to "All Users", users_path%></li>
                                 
                             <% end -%>
-                            <li><%= link_to "Account", edit_user_registration_path %></li>
+                            <li><%= link_to "Edit Account", edit_user_registration_path %></li>
                             <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
                     </ul> 
             </div>

@@ -1,0 +1,60 @@
+<div class="container-fluid">
+ 	<div class="row">
+		<div class="col-sm-4 col-md-2 sidebar white">
+			
+			<ul class="nav nav-sidebar">
+				<li><%= link_to "List all Guitar", guitars_path %></li>
+				<li><%= link_to "Add New Guitar", new_guitar_path %></li>
+      		</ul>
+      
+			<ul class="nav nav-sidebar">
+				<li><%= link_to "List all Purchase Order", purchase_orders_path %></li>
+				<li><%= link_to "New Purchase", new_purchase_order_path %></li>
+			</ul>
+
+			<ul class="nav nav-sidebar">
+				<li><%= link_to "List all Customer", customers_path %></li>
+				<li><%= link_to "Add Customer", new_customer_path %></li>
+			</ul>
+
+			<ul class="nav nav-sidebar">
+				<li class="active"><%= link_to "List all Dealer", dealers_path %></li>
+				<li><%= link_to "Add New Dealer", new_dealer_path %></li>
+ 			</ul>
+
+    	</div>
+
+    	<div class="col-md-9 main white">
+
+			<p id="notice"><%= notice %></p>
+
+			<table class="table">
+        <thead>
+          <tr class="active">
+            <th>User Id</th>
+            <th>Email</th>
+            <th>Date of Join</th>
+            <th>Update at</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @users.each do |user| %>
+            <tr>
+              <td><%= user.id %></td>
+              <td><%= user.email %></td>
+              <td><%= user.created_at %></td>
+              <td><%= user.updated_at %></td>
+              <% if user.admin? %>
+              	<td>Owner</td>
+              <% else %>
+              	<td>Staff</td>
+              <%end%>
+          <% end %>
+        </tbody>
+      </table>
+
+		</div>
+	</div>
+</div>
