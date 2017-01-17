@@ -24593,3 +24593,507 @@ Started GET "/users/sign_in" for 127.0.0.1 at 2016-04-29 18:39:58 +0545
 Processing by Devise::SessionsController#new as HTML
   Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:36:01 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuitarsController#index as HTML
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-01-17 19:36:01 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 4026ms (Views: 4011.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-4514d613e98cc0df563bcdf8216b7f054ea86f29bf8ea8c5455b6dcad4f80e01.css?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/dealers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/customers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/purchase_orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/guitars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:05 +0545
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2017-01-17 19:36:06 +0545
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:37:47 +0545
+Processing by GuitarsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-01-17 19:37:47 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+Processing by GuitarsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4514d613e98cc0df563bcdf8216b7f054ea86f29bf8ea8c5455b6dcad4f80e01.css?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/dealers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/customers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/guitars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/purchase_orders.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:24 +0545
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for 127.0.0.1 at 2017-01-17 19:38:25 +0545
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 19:41:12 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MUcAaD3HD9qdnnWYqLedvi8IWtNrTtbdAODcHIkyC518xFmnQzfrOzLy66UEZT5+cqSN58t8urhUrfmQe42GsQ==", "user"=>{"email"=>"kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 182ms (ActiveRecord: 0.5ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MUcAaD3HD9qdnnWYqLedvi8IWtNrTtbdAODcHIkyC518xFmnQzfrOzLy66UEZT5+cqSN58t8urhUrfmQe42GsQ==", "user"=>{"email"=>"kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 135ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 19:43:00 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+0jCRnGlhvEEtddw1nRPSfoAAKK2ZMlz3Jk43YxHaS62y5uJD1ViEKvZSU16puyJp6zXlhZWpRaI1B1RfvjkAg==", "user"=>{"email"=>"kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "kiran.admin@admin.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-04-29 12:50:09.245962"], ["current_sign_in_at", "2017-01-17 13:58:00.681090"], ["sign_in_count", 41], ["updated_at", "2017-01-17 13:58:00.682098"], ["id", 1]]
+  [1m[35m (75.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 203ms (ActiveRecord: 84.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:43:00 +0545
+Processing by GuitarsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGuitar Load (0.2ms)[0m  SELECT "guitars".* FROM "guitars"
+  Rendered guitars/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 96ms (Views: 81.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/guitars/4" for 127.0.0.1 at 2017-01-17 19:43:11 +0545
+Processing by GuitarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGuitar Load (0.4ms)[0m  SELECT  "guitars".* FROM "guitars" WHERE "guitars"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered guitars/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 73ms (Views: 51.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:43:14 +0545
+Processing by GuitarsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGuitar Load (0.5ms)[0m  SELECT "guitars".* FROM "guitars"
+  Rendered guitars/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:49:45 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GuitarsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mGuitar Load (0.6ms)[0m  [1mSELECT "guitars".* FROM "guitars"[0m
+  Rendered guitars/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 338ms (Views: 286.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/guitars/new" for 127.0.0.1 at 2017-01-17 19:49:47 +0545
+Processing by GuitarsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered guitars/_form.html.erb (27.4ms)
+  Rendered guitars/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 118ms (Views: 115.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/purchase_orders/new" for 127.0.0.1 at 2017-01-17 19:49:48 +0545
+Processing by PurchaseOrdersController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered purchase_orders/_form.html.erb (12.9ms)
+  Rendered purchase_orders/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 112ms (Views: 98.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/customers/new" for 127.0.0.1 at 2017-01-17 19:49:49 +0545
+Processing by CustomersController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered customers/_form.html.erb (7.0ms)
+  Rendered customers/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 127ms (Views: 103.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dealers/new" for 127.0.0.1 at 2017-01-17 19:49:50 +0545
+Processing by DealersController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered dealers/_form.html.erb (11.4ms)
+  Rendered dealers/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 97ms (Views: 82.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-01-17 19:49:50 +0545
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 66ms (Views: 62.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2017-01-17 19:49:51 +0545
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-01-17 19:49:53 +0545
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ju33G7XbMHwQ46MtF4jcK15tq/SU9CHljF6hkwwrirELTl+gbXhfYYAEKfEasuD9zbH77oIenXtS9o2fGlvrVw=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:49:53 +0545
+Processing by GuitarsController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-01-17 19:49:53 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 19:49:55 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rupkm4AFZTq4Asy5Cx+h4QiCKBHrLeLM54hBskrqY3Ih8/alaK2Z4UrZx8EKjchZXZ84wYd8dzPtFB5CROiiXQ==", "user"=>{"email"=>"kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "kiran.admin@admin.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-01-17 13:58:00.681090"], ["current_sign_in_at", "2017-01-17 14:04:55.237664"], ["sign_in_count", 42], ["updated_at", "2017-01-17 14:04:55.238659"], ["id", 1]]
+  [1m[35m (174.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 278ms (ActiveRecord: 175.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 19:49:55 +0545
+Processing by GuitarsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mGuitar Load (0.2ms)[0m  SELECT "guitars".* FROM "guitars"
+  Rendered guitars/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2017-01-17 20:04:37 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VxwLfsrgps/UBalDJFXYHILarQAZ8DUu3pWThwCmzOtCGJwL8hg+p8WZA1+fok25P5++k6LUrS02Ge50IYYKFg=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 37ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 20:04:37 +0545
+Processing by GuitarsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-01-17 20:04:37 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 251ms (Views: 248.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:04:43 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r9MxMBNluXSkLy8ASYQHWB7S9PQGIq9Eq32bPwpaubC37iS+X/pma8f0nA10DKbhzfwJJNAjHyAVPm+ZGxklrw==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 41ms (ActiveRecord: 0.6ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r9MxMBNluXSkLy8ASYQHWB7S9PQGIq9Eq32bPwpaubC37iS+X/pma8f0nA10DKbhzfwJJNAjHyAVPm+ZGxklrw==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 152ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:04:45 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MIKEnLfPHUI8rQRmOGWSChPc6C/16D8JiNXfRvAzR38ov5ES+1DCXV92t2sF7TOzwPIV/yPpj202livg4XDbYA==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MIKEnLfPHUI8rQRmOGWSChPc6C/16D8JiNXfRvAzR38ov5ES+1DCXV92t2sF7TOzwPIV/yPpj202livg4XDbYA==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:04:57 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bvSyRR+d6pds7ZLVt5nsSQjr8+Rk3Vgtg/IdZ6OICK92yafLUwI1iA82IdiKEU3w28UONLLc6Ek9senBssuUsA==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bvSyRR+d6pds7ZLVt5nsSQjr8+Rk3Vgtg/IdZ6OICK92yafLUwI1iA82IdiKEU3w28UONLLc6Ek9senBssuUsA==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 176ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:07:40 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4LsFSceD4cXfgb5Y2Aug3Adz91V5ZGzB9tlbgUaD9e74hhDHixw+2rxaDVXlgwFl1F0Kha9l3KVImq8nV8Bp8Q==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4LsFSceD4cXfgb5Y2Aug3Adz91V5ZGzB9tlbgUaD9e74hhDHixw+2rxaDVXlgwFl1F0Kha9l3KVImq8nV8Bp8Q==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 140ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '4kiran.admin@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:12:14 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AqB2BDoDVi3iMZxCHZA6oxPc60TlIPBZVDYJCsHFsIIanWOKdpyJMoHqL08gGJsawPIWlDMhQD3qdf2s0IYsnQ==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AqB2BDoDVi3iMZxCHZA6oxPc60TlIPBZVDYJCsHFsIIanWOKdpyJMoHqL08gGJsawPIWlDMhQD3qdf2s0IYsnQ==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 136ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:12:23 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L5kj225ePGQ460xDR3FbFBwLjN3/KcG+5hotrRKaSmg3pDZVIsHje1sw/056+fqtzyVxDSkocdpYWdkLA9nWdw==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L5kj225ePGQ460xDR3FbFBwLjN3/KcG+5hotrRKaSmg3pDZVIsHje1sw/056+fqtzyVxDSkocdpYWdkLA9nWdw==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 134ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:12:36 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j0591ZiIqIHNLMuEmm0xTaojaEUb9kC4qZuCZBnqYmiXc2hb1Bd3nq73eImn5ZD0eQ2Vlc338NwX2HbCCKn+dw==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 28ms (ActiveRecord: 0.6ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j0591ZiIqIHNLMuEmm0xTaojaEUb9kC4qZuCZBnqYmiXc2hb1Bd3nq73eImn5ZD0eQ2Vlc338NwX2HbCCKn+dw==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 352ms (Views: 236.9ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '4kiran.admin@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = '5madan@admin.com' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '6kiran@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:15:16 +0545
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KuHwAra8ZbquPeqPA1XJQrj0M5YRT7taPmRiIxp3rWEy3OWM+iO6pc3mWYI+3Wj7a9rORsdOCz6AJ5aFCzQxfg==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 27ms (ActiveRecord: 1.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KuHwAra8ZbquPeqPA1XJQrj0M5YRT7taPmRiIxp3rWEy3OWM+iO6pc3mWYI+3Wj7a9rORsdOCz6AJ5aFCzQxfg==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 365ms (Views: 247.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '4kiran.admin@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:16:54 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vCNeBIw/TE/ahbnkOWOaLi1MC49sSENJyGT7hcH9YiWkHkuKwKCTULleCukE6zuX/mL2X7pJ8y12Jw8j0L7+Og==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "4kiran.admin@admin.com"]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 1.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vCNeBIw/TE/ahbnkOWOaLi1MC49sSENJyGT7hcH9YiWkHkuKwKCTULleCukE6zuX/mL2X7pJ8y12Jw8j0L7+Og==", "user"=>{"email"=>"4kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  Rendered devise/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 177ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in?class=form+col-md-9+center-block" for 127.0.0.1 at 2017-01-17 20:17:07 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Dv0L5YuwS37bVbVAXbaTMDUk2aiGWb2iEjQB4ptobr8BuGh2rEeMpi25dg8/nv1E/putnQY1pI2CyShmy49pQ==", "user"=>{"email"=>"kiran.admin@admin.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login", "class"=>"form col-md-9 center-block"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "kiran.admin@admin.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-01-17 14:04:55.237664"], ["current_sign_in_at", "2017-01-17 14:32:07.228916"], ["sign_in_count", 43], ["updated_at", "2017-01-17 14:32:07.229978"], ["id", 1]]
+  [1m[36m (169.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 265ms (ActiveRecord: 169.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-17 20:17:07 +0545
+Processing by GuitarsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mGuitar Load (0.3ms)[0m  [1mSELECT "guitars".* FROM "guitars"[0m
+  Rendered guitars/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 137ms (Views: 126.3ms | ActiveRecord: 1.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = '4kiran.admin@admin.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
